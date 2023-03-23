@@ -1,0 +1,14 @@
+[Unit]
+Description=Take Planes Service
+After=multi-user.target
+
+[Service]
+Type=simple
+User=pier
+WorkingDirectory=/home/pier/auto/
+ExecStart=/usr/bin/python3 /home/pier/auto/take_planes.py
+Restart=always
+RestartSec=10s
+
+[Install]
+WantedBy=multi-user.target
