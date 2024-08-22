@@ -45,7 +45,7 @@ username.send_keys(f"{bet_user}")
 
 password = driver.find_element(By.XPATH, '/html/body/div[2]/div[2]/div/mat-dialog-container/obg-m-login-with-dialog/obg-m-dialog-layout/div/obg-m-login-container/obg-m-generic-login-container/form/div[1]/mat-form-field[2]/div/div[1]/div[1]/input')
 #bet_pass = input("Password ?\n")
-bet_pass = "*xxmaster1234Q"
+bet_pass = ""
 password.send_keys(f"{bet_pass}")
 
 driver.find_element(By.XPATH,'//*[@id="login"]/obg-m-login-with-dialog/obg-m-dialog-layout/div/obg-m-login-container/obg-m-generic-login-container/form/div[2]/button').click()
